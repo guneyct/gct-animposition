@@ -1,6 +1,4 @@
-ESX = exports["es_extended"]:getSharedObject()
-
-RegisterCommand("animpos", function (source, args, raw)
-    local _src = source
-    TriggerClientEvent("gct-animpos:client:animPos", _src)
+RegisterNetEvent("gct-animposition:server:syncPlayer", function(coords, heading, alpha)
+    local source = source
+    TriggerClientEvent("gct-animposition:client:syncPlayer", -1, source, coords, heading, alpha)
 end)

@@ -8,9 +8,5 @@ client_scripts {
 }
 
 server_scripts {
-	'server.lua'
-}
-
-depencies {
-	'rpemotes'
+	"server.lua"
 }
